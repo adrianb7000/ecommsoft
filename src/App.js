@@ -6,7 +6,7 @@ import Navbar from './components/common/Navbar'
 import ProductList from './components/product/ProductList'
 import NotFound from './components/common/NotFound'
 import Cart from './components/common/Cart'
-import ProductDetails from './components/product/ProductDetails'
+import ProductDetail from './components/product/ProductDetails'
 
 
 class App extends Component {
@@ -16,7 +16,7 @@ class App extends Component {
         <Navbar />
         <Switch>
           <Route exact path="/" component={ProductList}/>
-          <Route path="/details" component={ProductDetails}/>
+          <Route path="/details" component={ProductDetail}/>
           <Route path="/cart" component={Cart}/>
           <Route component={NotFound}/>
         </Switch>
